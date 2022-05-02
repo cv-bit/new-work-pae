@@ -1,6 +1,5 @@
-import OnClickFunctions from '../../../helpers/OnClickFunctions'
 import OnHoverFunctions from './OnHoverFunctions'
-import Word from './Word'
+import OnClickFunctions from './OnClickFunctions'
 
 const displayVideo = (arr, key) => {
     return <video 
@@ -37,14 +36,16 @@ const displayRect = (arr, key) => {
 
 const displayText = (arr, key) => {
 
-    let wordArray = arr.displayArgs[0].split(' ')
+    // let wordArray = arr.displayArgs[0].split(' ')
+    let ctx = document.querySelector('canvas')
 
-    return <div key={key} style={{display: "flex", flexWrap: "wrap", margin: "10px"}}>
-                {wordArray.map((word, i) => {
-                    return <Word word={word} key={i} index={i} arr={arr}/>
-                    })
-                }
-            </div>
+    return ctx.fillText(arr.displayArgs[0], arr.displayArgs[1], arr.displayArgs[2], arr.displayArgs[3])
+            // <div key={key} style={{display: "flex", flexWrap: "wrap", margin: "10px"}}>
+            //     {wordArray.map((word, i) => {
+            //         return <Word word={word} key={i} index={i} arr={arr}/>
+            //         })
+            //     }
+            // </div>
 }
 
 const invisibleRect = () => {
