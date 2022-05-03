@@ -6,4 +6,9 @@ export const StyledSideMenu = styled.div`
     height: 100%;
     width: 100px;
     background-color: ${({theme}) => theme.colors.header};
+
+    h3 {
+        color: #fff;
+        margin: 5px;
+    }
 `

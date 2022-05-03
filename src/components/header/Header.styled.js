@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
     background-color: ${({theme}) => theme.colors.header};
-    padding: 15px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
 
@@ -12,6 +12,9 @@ export const StyledHeader = styled.header`
         font-weight: 600;
         font-size: 1.5rem;
         text-decoration: none;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 5px;
     }
 `
 

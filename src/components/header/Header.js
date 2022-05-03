@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <StyledHeader>
             <Nav>
-                <Link to="">Home</Link>
+                <Link to="">PAE</Link>
             </Nav>
         </StyledHeader>
     )
