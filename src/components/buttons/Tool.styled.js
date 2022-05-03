@@ -7,5 +7,6 @@ export const Tool = styled.button`
     padding: 5px;
     margin: 5px;
     border: 1px solid #fff;
+    border-radius: 5px;
     cursor: pointer;
 `

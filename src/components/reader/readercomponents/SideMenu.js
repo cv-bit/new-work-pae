@@ -5,21 +5,21 @@ import '../../../App.css'
 export default function SideMenu() {
 
     const createBox = () => {
-        console.log("box")
+        console.log("invisible box")
         let div = document.createElement('div')
         div.id = 'pageObj-box'
         div.draggable = true
         document.body.appendChild(div)
     }
     const createText = () => {
-        console.log('text')
+        console.log('insert text')
         let div = document.createElement('div')
         div.id = 'pageObj-text'
         div.draggable = true
         document.body.appendChild(div)
     }
     const handleImage = () => {
-        console.log('image')
+        console.log('insert image')
         let div = document.createElement('div')
         div.id = 'pageObj-image'
         div.draggable = true
@@ -27,7 +27,7 @@ export default function SideMenu() {
     }
 
     const handleVideo = () => {
-        console.log('video')
+        console.log('insert video')
         let div = document.createElement('div')
         div.id = 'pageObj-video'
         div.draggable = true
