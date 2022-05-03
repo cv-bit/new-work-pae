@@ -9,7 +9,7 @@ export const StyledLandingPage = styled.div`
 
     h1 {
         padding-top: 25px;
-        margin: 0;
+        margin: 0 20px 25px 20px;
         text-align: center;
     }
 `

@@ -1,15 +1,14 @@
 import {StyledLandingPage} from './LandingPage.styled'
-import { Container } from '../../components/Container.styled'
-import { Button } from '../../components/buttons/Button.styled'
 import { FlexDiv } from '../../components/Flex.styled'
+import BookCard from '../books/BookCard'
 import { Link } from 'react-router-dom'
 
 export default function LandingPage() {
     return (
         <StyledLandingPage>
+            <h1>view book</h1>
             <FlexDiv>
-                <h1>Landing Page</h1>
-                
+                <Link to="/reader"><BookCard /></Link>
             </FlexDiv>
         </StyledLandingPage>
     )

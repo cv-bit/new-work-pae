@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledReader = styled.div`
-    min-height: 70vh;
+    min-height: 85vh;
     height: 100%;
     width: 100%;
     margin: auto;
@@ -9,4 +9,5 @@ export const StyledReader = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 `
