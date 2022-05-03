@@ -7,13 +7,12 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer'
 import LandingPage from './pages/Landing/LandingPage';
 import ScrollToTop from './helpers/ScrollToTop'
-import SampleReader from './pages/reader/SampleReader';
 import SampleAuthoring from './components/authoring/SampleAuthoring';
 
 const theme = {
   colors: {
     header: '#2a2a2a',
-    body: '#fff',
+    body: '#f3f3f3',
     footer: '#2a2a2a'
   },
   mobile: '768',
@@ -29,7 +28,7 @@ function App() {
           <Header/>
               <Routes>
                 <Route exact path="" element={<LandingPage/>}/>
-                <Route exact path="/samplereader" element={<SampleReader/>}/>
+                <Route exact path="/samplereader" element=""/>
                 <Route exact path="/sampleauthor" element={<SampleAuthoring/>}/>
               </Routes>
           <Footer/>

@@ -25,4 +25,8 @@ export const StyledFooter = styled.div`
         padding: 5px 10px;
         border-radius: 5px;
     }
+
+    h3:hover {
+        transform: scale(.95)
+    }
 `

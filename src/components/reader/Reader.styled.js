@@ -5,7 +5,6 @@ export const StyledReader = styled.div`
     height: 100%;
     width: 100%;
     margin: auto;
-    box-shadow:inset 0 0 5px black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

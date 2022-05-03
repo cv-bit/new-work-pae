@@ -9,12 +9,7 @@ export default function LandingPage() {
         <StyledLandingPage>
             <FlexDiv>
                 <h1>Landing Page</h1>
-                <Button>
-                    <Link to="/samplereader">Go to Sample Reader</Link>
-                </Button>
-                <Button>
-                    <Link to="/sampleauthor">Go to Sample Authoring</Link>
-                </Button>
+                
             </FlexDiv>
         </StyledLandingPage>
     )
