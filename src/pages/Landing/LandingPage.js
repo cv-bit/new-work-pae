@@ -8,7 +8,7 @@ export default function LandingPage() {
         <StyledLandingPage>
             <h1>view book</h1>
             <FlexDiv>
-                <Link to="/reader"><BookCard /></Link>
+                <Link to="/author-tool"><BookCard /></Link>
             </FlexDiv>
         </StyledLandingPage>
     )

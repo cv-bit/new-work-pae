@@ -1,14 +1,26 @@
 import { StyledSideMenu } from "./SideMenu.styled";
 import { Tool } from "../../buttons/Tool.styled";
+import page from "./Page";
 import '../../../App.css'
 
 export default function SideMenu() {
+
+    const handleDragStart = (e) => {
+        console.log(e)
+        
+    }
+
+    const handleDrop = (e) => {
+        console.log(e)
+    }
 
     const createBox = () => {
         console.log("invisible box")
         let div = document.createElement('div')
         div.id = 'pageObj-box'
         div.draggable = true
+        div.ondragstart = (e) => handleDragStart(e)
+        div.ondragend = (e) => handleDrop(e)
         document.body.appendChild(div)
     }
     const createText = () => {

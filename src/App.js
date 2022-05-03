@@ -29,7 +29,7 @@ function App() {
           <Header/>
               <Routes>
                 <Route exact path="" element={<LandingPage/>}/>
-                <Route exact path="/reader" element={<Reader/>}/>
+                <Route exact path="/author-tool" element={<Reader/>}/>
                 <Route exact path="/edit" element={<SampleAuthoring/>}/>
               </Routes>
           <Footer/>
