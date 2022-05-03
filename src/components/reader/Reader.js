@@ -3,7 +3,7 @@ import ReaderPage from './ReaderPage'
 
 export default function Page() {
 
-    const Pages = [1]
+    const Pages = [1, 2]
 
     return (
         <StyledReader>

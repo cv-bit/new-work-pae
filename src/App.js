@@ -8,6 +8,7 @@ import Footer from './components/footer/Footer'
 import LandingPage from './pages/Landing/LandingPage';
 import ScrollToTop from './helpers/ScrollToTop'
 import SampleReader from './pages/reader/SampleReader';
+import SampleAuthoring from './components/authoring/SampleAuthoring';
 
 const theme = {
   colors: {
@@ -29,6 +30,7 @@ function App() {
               <Routes>
                 <Route exact path="" element={<LandingPage/>}/>
                 <Route exact path="/samplereader" element={<SampleReader/>}/>
+                <Route exact path="/sampleauthor" element={<SampleAuthoring/>}/>
               </Routes>
           <Footer/>
         </Container>
