@@ -44,6 +44,8 @@ const createText = () => {
     input.style.height = "25px"
     input.setAttribute('type', 'textbox')
     input.onchange = (e) => handleText(e, p)
+    p.style.color ='#000'
+    p.style.opacity = 1
     div.append(input)
     div.appendChild(p)
     div.id = 'pageObj-text'
