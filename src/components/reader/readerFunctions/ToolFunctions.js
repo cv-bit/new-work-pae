@@ -7,36 +7,36 @@ const handleSave = () => {
 }
 
 const handleDrag = (e, div) => {
-    let prevX = e.clientX
-    let prevY = e.clientY
-
-    div.style.left =  prevX + "px"
-    div.style.top = prevY + "px"
+    
+    div.style.left =  e.screenX + "px"
+    div.style.top = e.screenY + "px"
 }
 
 const handleDrop = (e, div) => {
-    let prevX = e.clientX
-    let prevY = e.clientY
-
-    div.style.left =  prevX + "px"
-    div.style.top = prevY + "px"
+    console.log(e)
+    div.style.left =  e.offsetX + "px"
+    div.style.top = e.offsetY + "px"
+    
 }
 
 const createBox = () => {
+    let page = document.getElementById('page')
     console.log("invisible box")
     let div = document.createElement('div')
     div.id = 'pageObj-box'
     div.draggable = true
     div.ondrag = (e) => handleDrag(e, div)
     div.ondragend = (e) => handleDrop(e, div)
-    document.body.appendChild(div)
+    page.appendChild(div)
 }
+
 const createText = () => {
     const handleText = (e, p) => {
         p.innerHTML = e.target.value
     }
 
     console.log('insert text')
+    let page = document.getElementById('page')
     let div = document.createElement('div')
     let input = document.createElement('input')
     let p = document.createElement('p')
@@ -51,8 +51,9 @@ const createText = () => {
     div.id = 'pageObj-text'
     div.draggable = true
     div.ondrag = (e) => handleDrag(e, div)
-    div.ondragend = (e) => handleDrop(e, div)
-    document.body.appendChild(div)
+    div.ondragstop = (e) => handleDrop(e, div)
+
+    page.appendChild(div)
 }
 const handleImage = () => {
     console.log('insert image')
