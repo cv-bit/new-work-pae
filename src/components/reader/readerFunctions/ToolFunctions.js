@@ -7,16 +7,16 @@ const handleSave = () => {
 }
 
 const handleDrag = (e, div) => {
-    
-    div.style.left =  e.screenX + "px"
-    div.style.top = e.screenY + "px"
+    console.log(e)
+
+    div.style.transform =  `translateX(${e.screenX}px)`
+    div.style.transform = `translateY(${e.screenY}px)`
 }
 
 const handleDrop = (e, div) => {
     console.log(e)
-    div.style.left =  e.offsetX + "px"
-    div.style.top = e.offsetY + "px"
-    
+    div.style.left = e.clientX + 'px'
+    div.style.top = e.clientY + 'px'
 }
 
 const createBox = () => {
@@ -51,7 +51,7 @@ const createText = () => {
     div.id = 'pageObj-text'
     div.draggable = true
     div.ondrag = (e) => handleDrag(e, div)
-    div.ondragstop = (e) => handleDrop(e, div)
+    div.ondragend = (e) => handleDrop(e, div)
 
     page.appendChild(div)
 }
